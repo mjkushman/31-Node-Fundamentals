@@ -32,7 +32,7 @@ let newDeck = axios.get('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_c
 })
 
 function getCard() {
-    getURL = `https://deckofcardsapi.com/api/deck/${newDeckId}/draw/?count`
+    getURL = `https://deckofcardsapi.com/api/deck/${newDeckId}/draw/?count=1`
     console.log(newDeckId);
     axios.get(getURL)
     .then(res => {
